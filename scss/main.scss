@@ -9,6 +9,7 @@ body {
     height: 100%;
     background: $primary-color;
     color: $text-color;
+    font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 // Nav Bar
@@ -54,20 +55,32 @@ body {
 
     .main-welcome-text {
         padding: 50vh 15vw;
+        
+        h2 {
+           font-weight: bolder; 
+
+           span {
+               font-weight: normal;
+           }
+        }
     }
 }
 
-.container {
+.main {
     display: flex;
     padding-top: 12vh;
 }
 
-.welcome-text {
+.gallery-welcome {
     flex: 1;
 
     .text-box {
         width: 17vw;
         margin: auto;
+
+        h2 {
+            margin-bottom: 8vh;
+        }
     }
 }
 
@@ -95,6 +108,26 @@ body {
 
 }
 
+.about-welcome {
+    flex: 1;
+    padding: 0 5vw;
 
+    h2 {
+        margin-bottom: 8vh;
+    }
+}
+
+.about-image {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 55vw;
+        height: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    }
+}
 
 

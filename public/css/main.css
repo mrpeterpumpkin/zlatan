@@ -4,14 +4,15 @@
 
 body {
   height: 100%;
-  background: #202020;
-  color: #fff; }
+  background: #1d1d1d;
+  color: #fff;
+  font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif; }
 
 .nav-bar {
   position: fixed;
   width: 100%;
   height: 8vh;
-  background: rgba(14, 14, 14, 0.7);
+  background: rgba(11, 11, 11, 0.7);
   z-index: 1; }
   .nav-bar ul {
     display: flex;
@@ -37,16 +38,22 @@ body {
   overflow: hidden; }
   .main-bg .main-welcome-text {
     padding: 50vh 15vw; }
+    .main-bg .main-welcome-text h2 {
+      font-weight: bolder; }
+      .main-bg .main-welcome-text h2 span {
+        font-weight: normal; }
 
-.container {
+.main {
   display: flex;
   padding-top: 12vh; }
 
-.welcome-text {
+.gallery-welcome {
   flex: 1; }
-  .welcome-text .text-box {
+  .gallery-welcome .text-box {
     width: 17vw;
     margin: auto; }
+    .gallery-welcome .text-box h2 {
+      margin-bottom: 8vh; }
 
 .gallery {
   flex: 3;
@@ -63,3 +70,19 @@ body {
     .gallery img:hover {
       filter: grayscale(0%);
       transform: scale(1.1); }
+
+.about-welcome {
+  flex: 1;
+  padding: 0 5vw; }
+  .about-welcome h2 {
+    margin-bottom: 8vh; }
+
+.about-image {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .about-image img {
+    width: 55vw;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.3); }
