@@ -4,16 +4,27 @@
 
 body {
   height: 100%;
-  background: #252525; }
+  background: #252525;
+  color: #f5f5f5; }
+
+.container {
+  display: flex; }
+
+.welcome-text {
+  flex: 1; }
+  .welcome-text .text-box {
+    width: 17vw;
+    margin: auto; }
 
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly; }
+  flex: 3;
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(4, 1fr); }
   .gallery img {
     width: 200px;
     height: 150px;
-    padding: 15px;
+    padding-bottom: 5px;
     filter: grayscale(100%);
     transition: all 0.5s ease-out; }
     .gallery img:hover {
