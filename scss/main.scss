@@ -1,22 +1,38 @@
+@import 'config';
+
 * {
-    
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    background: $primary-color;
+
 }
 
 .gallery {
-   margin: 10px 50px;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    img {
+        width: 200px;
+        height: 150px;
+        padding: 15px;
+        filter: grayscale(100%);
+        @include easeOut();
+        
+        &:hover {
+            filter: grayscale(0%);
+            transform: scale(1.1);
+        
+        }
+        
+    }
+
 }
 
-.gallery img {
-    padding: 15px;
-    transition: 500ms;
-    width: 200px;
 
-    
-}
 
-.gallery img:hover {
-    filter: grayscale(50%);
-    transform: scale(1.1);
 
-}
