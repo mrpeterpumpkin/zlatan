@@ -11,17 +11,19 @@ body {
     color: $text-color;
 }
 
+// Nav Bar
+
 .nav-bar {
     position: fixed;
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     background: rgba(darken($primary-color, 7), 0.7);
     z-index: 1;
 
     ul{
         display: flex;
         justify-content: space-evenly;
-        padding-top: 3vh;
+        padding-top: 2vh;
         list-style: none;
 
         a {
@@ -34,9 +36,24 @@ body {
             }
 
             li {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
         }
+    }
+}
+// -------- Nav Bar End---------
+
+.main-bg {
+    background: url(../image/camera_big.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    .main-welcome-text {
+        padding: 50vh 15vw;
     }
 }
 
@@ -56,13 +73,14 @@ body {
 
 .gallery {
     flex: 3;
-    display: grid;    
-    grid-gap: 0.7rem;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     img {
         width: 200px;
         height: 150px;
+        margin: 0.5rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
         filter: grayscale(100%);
         @include easeOut();
