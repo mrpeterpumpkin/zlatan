@@ -130,4 +130,26 @@ body {
     }
 }
 
+.contact-welcome {
+    flex: 1;
+    padding: 0 5vw;
 
+    h2 {
+        margin-bottom: 10vh;
+    }
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10vh;
+
+    a {
+        color: $text-color;
+        @include easeOut();
+
+        &:hover {
+            color: darken($text-color, 50);
+        }
+    }
+}
