@@ -4,7 +4,7 @@
   "description": "Gallery",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o public/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "Peter Molnar",
   "license": "MIT",
