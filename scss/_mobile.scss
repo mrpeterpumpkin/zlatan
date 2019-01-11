@@ -1,0 +1,75 @@
+// Wide screens
+@include mediaXl {
+    
+}
+
+// Desktops & Laptops
+@include mediaLg {
+    .main-bg {
+        .main-welcome-text {
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+// Tablets
+@include mediaMd {
+    .main {
+        flex-direction: column;
+        
+    }
+
+    .main-bg {
+        .main-welcome-text {
+            padding: 25vh 10vw;
+
+            h2{
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .gallery-welcome {
+        flex: 1;
+
+        .text-box {
+            width: 80vw;
+        }
+    }
+
+    .gallery {
+        flex: 1;
+    }
+
+    .about-image {
+        margin-top: 10vh;
+
+        img {
+            width: 80vw;
+        }
+    }
+
+    footer {
+        position: relative;
+    }
+}
+
+// Smartphones
+@include mediaSm {
+    .main-bg {
+        background: url(../image/camera_small.jpg);
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .main-welcome-text {
+            padding: 20vh 10vw;
+
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

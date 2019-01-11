@@ -39,6 +39,7 @@ body {
   .main-bg .main-welcome-text {
     padding: 50vh 15vw; }
     .main-bg .main-welcome-text h2 {
+      font-size: 2rem;
       font-weight: bolder; }
       .main-bg .main-welcome-text h2 span {
         font-weight: normal; }
@@ -102,3 +103,46 @@ body {
     transition: all 0.3s ease-out; }
     .icons a:hover {
       color: gray; }
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  margin: 3vh 0;
+  font-size: 0.8rem; }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .main-bg .main-welcome-text h2 {
+    font-size: 1.5rem; } }
+
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column; }
+  .main-bg .main-welcome-text {
+    padding: 25vh 10vw; }
+    .main-bg .main-welcome-text h2 {
+      font-size: 1.4rem; }
+  .gallery-welcome {
+    flex: 1; }
+    .gallery-welcome .text-box {
+      width: 80vw; }
+  .gallery {
+    flex: 1; }
+  .about-image {
+    margin-top: 10vh; }
+    .about-image img {
+      width: 80vw; }
+  footer {
+    position: relative; } }
+
+@media screen and (max-width: 500px) {
+  .main-bg {
+    background: url(../image/camera_small.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .main-bg .main-welcome-text {
+      padding: 20vh 10vw; }
+      .main-bg .main-welcome-text h2 {
+        font-size: 1.2rem; } }
